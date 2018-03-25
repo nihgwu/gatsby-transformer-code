@@ -16,7 +16,6 @@ In your `gatsby-config.js`
 ```javascript
 module.exports = {
   plugins: [
-    `gatsby-transformer-yaml`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
