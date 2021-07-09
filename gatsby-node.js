@@ -1,7 +1,7 @@
 const crypto = require('crypto')
 
 exports.onCreateNode = (
-  { node, boundActionCreators, loadNodeContent },
+  { node, actions, loadNodeContent },
   pluginOptions
 ) => {
   if (!pluginOptions.name || pluginOptions.name !== node.sourceInstanceName) {
@@ -16,7 +16,7 @@ exports.onCreateNode = (
   }
 
   return loadNodeContent(node).then(content => {
-    const { createNode, createParentChildLink } = boundActionCreators
+    const { createNode, createParentChildLink } = actions
 
     const contentDigest = crypto
       .createHash('md5')
