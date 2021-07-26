@@ -1,7 +1,7 @@
 {
   "name": "gatsby-transformer-code",
   "description": "Gatsby transformer plugin for code",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Neo Nie <nihgwu@live.com>",
   "homepage": "https://github.com/nihgwu/gatsby-transformer-code",
   "repository": "https://github.com/nihgwu/gatsby-transformer-code",
